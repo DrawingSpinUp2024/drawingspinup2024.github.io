@@ -90,11 +90,11 @@
                   <span>Ablation</span>
                 </a>
               </span>
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="#limitations" class="nav-link button-55 is-normal">
                   <span>Limitations</span>
                 </a>
-              </span> -->
+              </span>
             </div>
           </div>
         </div>
@@ -154,9 +154,6 @@
 </section>
 
 <!--Gallery-->
-
-    
-  
 <section class="section">
   <div class="container is-widescreen" id="gallery">
     <div class="link-block ">
@@ -261,7 +258,6 @@
 </section>
 
 <!-- Ablation -->
-
 <section class="section">
   <div class="container is-widescreen" id="ablation">
     <div class="link-block ">
@@ -298,16 +294,39 @@
         </div>
     </div> 
 </div>
+</section>
+
+<!-- Limitations -->
+<section class="section">
+  <div class="container is-widescreen" id="limitations">
+    <div class="link-block ">
+      <a href="#top" class="nav-link button-55 is-normal">
+        <span>Go to Top</span>
+      </a>
+    </div>
+    <h2 class="title is-3 has-text-centered is-centered">Limitations</h2><br>
+  </div>
 
 <div class="columns is-centered has-text-centered">
   <div class="column has-text-centered">
-    <br><h2 class="title is-5">Failure Cases</h2>
-    <img src="static/images/limitation/fig_failure_case.png" width="60%"/>
+    <br><h2 class="title is-5">Inappropriate Edge Extraction</h2>
+    <img src="static/images/limitation/fig_limitation_1.png" width="60%"/>
       <div class="title is-6 content has-text-centered">
-        Some failure cases.
+          Our contour rendering might produce artifacts when we extract edges with inappropriate thresholds, as shown in the red dotted circles.
       </div>
   </div> 
 </div>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column has-text-centered">
+    <br><h2 class="title is-5">Hard Examples with Too Thick Contour Lines</h2>
+    <img src="static/images/limitation/fig_limitation_2.png" width="60%"/>
+      <div class="title is-6 content has-text-centered">
+        When the contour lines of the input drawing are too thick, artifacts may appear in the generated results, as indicated by the red dotted circles. 
+      </div>
+  </div> 
+</div>
+  
 </section>
 
 <section class="section" id="BibTeX">
